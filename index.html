@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Adrian Pena — Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
@@ -12,36 +12,23 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-        <header>
+ 
+    <!-- ========== HEADER / NAV ========== -->
+    <header>
+ 
+        <!-- Checkbox must be OUTSIDE and BEFORE the label -->
+        <input class="check" type="checkbox" id="hamburger-checkbox">
  
         <div class="header-inner">
-            <a href="#" class="logo"><!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-        <header>
-
+            <a href="#" class="logo">Adrian Pena</a>
  
-        <div class="header-inner">
-            <a href="#" class="logo">Adrian</a>
- 
+            <!-- Hamburger label (mobile only) -->
             <label class="hamburger" for="hamburger-checkbox">
-                <input class="check" type="checkbox" id="hamburger-checkbox">
                 <ion-icon name="menu-outline" class="nav-icon-hamburger"></ion-icon>
                 <ion-icon name="close-outline" class="nav-icon-close"></ion-icon>
             </label>
  
-
+            <!-- Desktop nav -->
             <nav class="nav-desktop">
                 <ul>
                     <li><a href="#about">About</a></li>
@@ -52,122 +39,132 @@
                 </ul>
             </nav>
         </div>
-    
-</body>
-    
+ 
+        <!-- Mobile nav (sibling of .check and .header-inner) -->
+        <nav class="nav-mobile">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#extracurriculars">Extracurriculars</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+ 
+    </header>
+ 
+    <!-- ========== MAIN CONTENT ========== -->
     <main>
  
-
+        <!-- HERO / ABOUT -->
         <section id="about" class="hero">
             <div class="hero-content">
-                <p class="hero-eyebrow">Hello, I'm Adrian</p>
+                <p class="hero-eyebrow">Hello, I'm</p>
                 <h1>Adrian Pena</h1>
                 <p class="hero-sub">CRLS student, coder, and football player</p>
                 <a href="#projects" class="btn">View My Work</a>
             </div>
-            <div class="hero-image">
-                <img src="images/profile.jpg" alt="Photo of Adrian">
-            </div>
         </section>
  
-
+        <!-- ABOUT ME -->
         <section id="about-me" class="section">
             <h2>About Me</h2>
             <div class="about-grid">
-                <p>I am a 17 year old dominican male. I go to CRLS high school. I am interested in the sport football and my religion.</p>
+                <p>I am a 17 year old Dominican male. I go to CRLS high school. I am interested in the sport football and my religion.</p>
                 <p>Jesus motivates me. I want to become a professional football player in the future.</p>
-                <p>I am from Dominincan Republic and can speak 3 different languages, which are English, Spainish, and French partially.</p>
+                <p>I am from the Dominican Republic and can speak 3 different languages: English, Spanish, and French partially.</p>
             </div>
         </section>
  
-
+        <!-- SKILLS -->
         <section id="skills" class="section section-alt">
             <h2>Skills</h2>
             <div class="skills-grid">
  
                 <div class="skill-card">
                     <ion-icon name="code-slash-outline"></ion-icon>
-                    <h3>HTML & CSS & PYTHON</h3>
-                    <p>I can building and styling web pages using HTML and CSS. I also know how to code using python. For example I have made a time convertor using only python.</p>
+                    <h3>HTML, CSS & Python</h3>
+                    <p>I can build and style web pages using HTML and CSS. I also know how to code using Python — for example, I made a time converter.</p>
                 </div>
  
                 <div class="skill-card">
-                    <ion-icon name="terminal-outline"></ion-icon>
+                    <!-- football/soccer icon -->
+                    <ion-icon name="football-outline"></ion-icon>
                     <h3>Football</h3>
-                    <p>I regard myself as a good football player. I have play in all positions on the field but I am a specialist at being a midfielder.</p>
+                    <p>I regard myself as a good football player. I have played in all positions on the field but I am a specialist at being a midfielder.</p>
                 </div>
  
                 <div class="skill-card">
                     <ion-icon name="people-outline"></ion-icon>
-                    <h3>Leader</h3>
-                    <p>I am a good leader. I have lead many different things. Being a football captian, leading a summer camp, or leading a group project in school.</p>
+                    <h3>Leadership</h3>
+                    <p>I am a good leader. I have led many different things — being a football captain, leading a summer camp, or leading a group project in school.</p>
                 </div>
  
                 <div class="skill-card">
-                    <ion-icon name="bulb-outline"></ion-icon>
+                    <ion-icon name="chatbubbles-outline"></ion-icon>
                     <h3>Trilingual</h3>
-                    <p>I currently know about 3 languages and hope to learn more. I can speak English, Spainish, and French. I also know a few key phrases in other languages like Portugesse, Arabic, and Amharic.</p>
+                    <p>I currently know about 3 languages and hope to learn more. I can speak English, Spanish, and French. I also know key phrases in Portuguese, Arabic, and Amharic.</p>
                 </div>
  
             </div>
         </section>
  
-
+        <!-- EXTRACURRICULARS -->
         <section id="extracurriculars" class="section">
             <h2>Extracurriculars</h2>
             <div class="extras-grid">
  
                 <article class="extra-card">
-                    <h3>CRLS Football player</h3>
-                    <p class="extra-meta">3 Years / Captian</p>
-                    <p>I enjoy this as this is my passion, to play football. I also enjoy connecting with my peers and coaches. Representing my community overall feels good.</p>
+                    <h3>CRLS Football Player</h3>
+                    <p class="extra-meta">3 Years / Captain</p>
+                    <p>I enjoy this as it is my passion — to play football. I also enjoy connecting with my peers and coaches. Representing my community overall feels great.</p>
                 </article>
  
                 <article class="extra-card">
-                    <h3>Camp Consuler</h3>
-                    <p class="extra-meta">1 Year / Consuler</p>
-                    <p>I love meeting new people and connecting with others. I see myself as a good rolemodel for the youth.</p>
+                    <h3>Camp Counselor</h3>
+                    <p class="extra-meta">1 Year / Counselor</p>
+                    <p>I love meeting new people and connecting with others. I see myself as a good role model for the youth.</p>
                 </article>
  
                 <article class="extra-card">
                     <h3>Football Coach</h3>
-                    <p class="extra-meta">2 years / Coach</p>
-                    <p>I coach kids from the age of 3-10. I like this new prespective of the game and being able to guide the youth into the right direction for their career.</p>
+                    <p class="extra-meta">2 Years / Coach</p>
+                    <p>I coach kids ages 3–10. I like this new perspective of the game and being able to guide the youth in the right direction for their career.</p>
                 </article>
  
             </div>
         </section>
  
-
+        <!-- PROJECTS -->
         <section id="projects" class="section section-alt">
             <h2>Projects</h2>
             <div class="projects-grid">
  
                 <article class="project-card">
-                    <div class="project-info">
-                        <h3>Time convertor</h3>
-                        <p>I built a time convertor. This can convert any time you want from one country's time to another. I learned python.</p>
-                        <a href="#" class="btn btn-sm">View Project</a>
-                        <video width="640" height="480" controls>
+                    <video width="100%" controls>
                             <source src="images/Create_Task_Video.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
+                    <div class="project-info">
+                        <h3>Time Converter</h3>
+                        <p>I built a time converter using Python. It can convert any time from one country's timezone to another.</p>
+                        <a href="images/Create_Task_Video.mp4" target="_blank" class="btn btn-sm">View Project</a>
                     </div>
                 </article>
  
                 <article class="project-card">
-                    <img src="images/Screenshot 2026-05-19 145807.png" alt="Screenshot of digital artpiece">
+                    <img src="images/Screenshot 2026-05-19 145807.png" alt="Digital art portrait of Salah and Thiago">
                     <div class="project-info">
-                        <h3>Self portrait of Salah and Thiago</h3>
-                        <p>I made a digitial art piece of my favorite players from my club only. This digital art piece is meant for your eyes to enjoy. I learned how to using all the adobe softwares to produce artwork.</p>
-                        <a href="#" class="btn btn-sm">View Project</a>
+                        <h3>Self Portrait of Salah and Thiago</h3>
+                        <p>I made a digital art piece of my favorite players from my club. I learned how to use Adobe software to produce artwork.</p>
+                        <a href="images/Screenshot 2026-05-19 145807.png" target="_blank" class="btn btn-sm">View Project</a>
                     </div>
                 </article>
  
             </div>
         </section>
  
-
+        <!-- CONTACT -->
         <section id="contact" class="section">
             <h2>Contact</h2>
             <p class="contact-intro">Want to get in touch? Reach me through any of the links below.</p>
@@ -184,5 +181,11 @@
         </section>
  
     </main>
+ 
+    <!-- ========== FOOTER ========== -->
+    <footer>
+        <p>© 2026 Adrian Pena</p>
+    </footer>
+ 
 </body>
 </html>
